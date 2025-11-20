@@ -1,0 +1,53 @@
+=== Reglas obtenidas ===
+|--- Olor_ninguno <= 0.500
+|   |--- Olor_anis <= 0.500
+|   |   |--- Olor_almendra <= 0.500
+|   |   |   |--- weights: [0.000, 2590.000] class: 1
+|   |   |--- Olor_almendra >  0.500
+|   |   |   |--- weights: [168.000, 0.000] class: 0
+|   |--- Olor_anis >  0.500
+|   |   |--- weights: [178.000, 0.000] class: 0
+|--- Olor_ninguno >  0.500
+|   |--- Habitat_praderas <= 0.500
+|   |   |--- Forma_sombrero_conica <= 0.500
+|   |   |   |--- Habitat_hojas <= 0.500
+|   |   |   |   |--- Forma_sombrero_acampanada <= 0.500
+|   |   |   |   |   |--- Forma_sombrero_abotonada <= 0.500
+|   |   |   |   |   |   |--- Forma_sombrero_chata <= 0.500
+|   |   |   |   |   |   |   |--- weights: [997.000, 0.000] class: 0
+|   |   |   |   |   |   |--- Forma_sombrero_chata >  0.500
+|   |   |   |   |   |   |   |--- Habitat_pastos <= 0.500
+|   |   |   |   |   |   |   |   |--- Habitat_bosque <= 0.500
+|   |   |   |   |   |   |   |   |   |--- weights: [77.000, 0.000] class: 0
+|   |   |   |   |   |   |   |   |--- Habitat_bosque >  0.500
+|   |   |   |   |   |   |   |   |   |--- weights: [719.000, 2.000] class: 0
+|   |   |   |   |   |   |   |--- Habitat_pastos >  0.500
+|   |   |   |   |   |   |   |   |--- weights: [234.000, 2.000] class: 0
+|   |   |   |   |   |--- Forma_sombrero_abotonada >  0.500
+|   |   |   |   |   |   |--- Habitat_bosque <= 0.500
+|   |   |   |   |   |   |   |--- weights: [131.000, 0.000] class: 0
+|   |   |   |   |   |   |--- Habitat_bosque >  0.500
+|   |   |   |   |   |   |   |--- weights: [2.000, 2.000] class: 0
+|   |   |   |   |--- Forma_sombrero_acampanada >  0.500
+|   |   |   |   |   |--- Habitat_bosque <= 0.500
+|   |   |   |   |   |   |--- Habitat_caminos <= 0.500
+|   |   |   |   |   |   |   |--- weights: [84.000, 1.000] class: 0
+|   |   |   |   |   |   |--- Habitat_caminos >  0.500
+|   |   |   |   |   |   |   |--- weights: [1.000, 0.000] class: 0
+|   |   |   |   |   |--- Habitat_bosque >  0.500
+|   |   |   |   |   |   |--- weights: [1.000, 1.000] class: 0
+|   |   |   |--- Habitat_hojas >  0.500
+|   |   |   |   |--- Forma_sombrero_acampanada <= 0.500
+|   |   |   |   |   |--- Forma_sombrero_convexa <= 0.500
+|   |   |   |   |   |   |--- Forma_sombrero_abotonada <= 0.500
+|   |   |   |   |   |   |   |--- weights: [60.000, 2.000] class: 0
+|   |   |   |   |   |   |--- Forma_sombrero_abotonada >  0.500
+|   |   |   |   |   |   |   |--- weights: [58.000, 2.000] class: 0
+|   |   |   |   |   |--- Forma_sombrero_convexa >  0.500
+|   |   |   |   |   |   |--- weights: [55.000, 0.000] class: 0
+|   |   |   |   |--- Forma_sombrero_acampanada >  0.500
+|   |   |   |   |   |--- weights: [40.000, 3.000] class: 0
+|   |   |--- Forma_sombrero_conica >  0.500
+|   |   |   |--- weights: [0.000, 2.000] class: 1
+|   |--- Habitat_praderas >  0.500
+|   |   |--- weights: [0.000, 4.000] class: 1
